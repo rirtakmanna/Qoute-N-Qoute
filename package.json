@@ -7,14 +7,18 @@
     "build": "parcel build src/index.html -d build"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.11"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.6"
+    "autoprefixer": "^9.8.6",
+    "clipboard": "^2.0.6"
   },
   "repository": {
     "type": "git",

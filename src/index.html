@@ -1,20 +1,73 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- link favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon/site.webmanifest">
+<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 
     <!-- link css file -->
-    <link rel='stylesheet' href='./sass/main.scss' />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
 
     <!-- link js file -->
-    <script src='./js/index.js' defer></script>
+    <script src="./js/index.js" defer></script>
 
     <title>qouteNqoute</title>
   </head>
   <body>
-  <div class='wrapper'></div>
+    <div class="wrapper">
+      <div class="background">
+        <!-- actuall quote -->
+        <div class="quote" id="quote-container">
+          <div class="quote__text">
+            <i class="fas fa-quote-left quote__text--svg"></i>
+            <span class="quote__text--q" id="quote"></span>
+          </div>
+
+          <!-- Author -->
+          <div class="quote__author">
+            - <span class="quote__author--item" id="author"></span>
+          </div>
+
+          <!-- Button -->
+          <div class="quote__btn">
+            <button id="copy" class="quote__btn--item quote__btn--item-1" data-clipboard-target="#quote">Copy Qoute</button>
+            <button
+            
+              id="twitter"
+              title="Tweet This!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="quote__btn--item quote__btn--tweet quote__btn--item-2"
+              ><i class="fab fa-twitter"></i
+            ></button>
+            <button
+            
+              id="whatsapp"
+              title="Whatsapp This!"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="quote__btn--item quote__btn--whats quote__btn--item-3"
+              ><i class="fab fa-whatsapp"></i
+            ></button>
+            <button  id="new-qoute" class="quote__btn--item quote__btn--item-4">New Qoute</button>
+          </div>
+        </div>
+
+        <!-- loader -->
+        <div class="loader" id="loader"></div>
+    </div>
   </body>
 </html>
