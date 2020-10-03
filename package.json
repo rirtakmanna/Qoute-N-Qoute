@@ -1,0 +1,40 @@
+{
+  "name": "qoute-n-qoute",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html -d public",
+    "build": "parcel build src/index.html -d build"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rirtakmanna/Qoute-N-Qoute.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "last 5 version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/rirtakmanna/Qoute-N-Qoute/issues"
+  },
+  "author": "rirtakmanna <web@rirtakmanna.com>",
+  "license": "MIT"
+}
